@@ -1,0 +1,12 @@
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.26'
+    compile 'com.google.guava:guava:26.0-jre'
+    compileOnly 'javax.persistence:javax.persistence-api:2.2'
+
+    integrationTestCompile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.3.0'
+    integrationTestCompile 'com.fasterxml.jackson.core:jackson-databind:2.2.3'
+    integrationTestCompile 'com.zaxxer:HikariCP:2.6.1'
+    integrationTestRuntimeOnly 'com.h2database:h2:1.4.200'
+    integrationTestCompile 'org.projectlombok:lombok:1.18.10'
+    integrationTestAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+}

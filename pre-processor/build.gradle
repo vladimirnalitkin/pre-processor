@@ -1,0 +1,17 @@
+dependencies {
+    compile project(':parser')
+    compile project(':jdbc-wrapper')
+
+    implementation 'io.springfox:springfox-swagger2:2.8.0'
+    implementation 'org.freemarker:freemarker:2.3.29'
+    implementation 'org.slf4j:slf4j-api:1.7.26'
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    compileOnly 'org.springframework:spring-webmvc:5.1.5.RELEASE'
+    compile 'javax.persistence:javax.persistence-api:2.2'
+
+    implementation 'com.google.auto.service:auto-service:1.0-rc5'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc5'
+
+    integrationTestImplementation 'com.google.testing.compile:compile-testing:0.5'
+    //integrationTestImplementation 'junit:junit:4.13'
+}
